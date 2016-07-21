@@ -47,11 +47,48 @@
   //   $win.scrollTop() > 0 && k && I()
   // };
   // winresize();
+
+
 })(jQuery);
 
+$(function(){
+  // 轮播图
+var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    speed:500,
+    autoplay: 5000,//可选选项，自动滑动
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    paginationClickable :true,
+    // 如果需要前进后退按钮
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+  });
+
+//   // feed流样式更改
+//   var dom_feedCard1=$(".feed-card-c1").parents('.feed-card-item');
+//   // 标题更改
+//  dom_feedCard1.find("h2").css({
+//    position:"absolute",
+//    width:"480px",
+//    left:"320px",
+//    whiteSpace:"nowrap",
+//    overflow:"hidden",
+//    textOverflow:"ellipsis",
+//    backgroundColor:"red"
+//  });
+
+  var=   
 
 
 
+});
+function feedView(newsList){
+ $(".feed-card-c1").parents('.feed-card-item').css({
+   backgroundColor:"red"
+ });   
+}
 
 
 
