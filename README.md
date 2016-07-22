@@ -12,6 +12,8 @@
 ##参考网易页面url：
 【链接】进了精神病院，就叫天天不应叫地地不灵
 http://view.163.com/special/resound/mentalhospital20160616.html
+【链接】手腕腱鞘炎
+http://baike.baidu.com/link?url=xbdr0ofFiw9LASdOjMCrJAI_eWazyJ7O16Fy3JvZgTPwA-Vbs097tTzTBW_0iIs8GsO1s71KwheXfm1xdCthbq#9
 
 
 ##测试url：
