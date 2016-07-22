@@ -57,48 +57,48 @@
         <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=483253"></script>
         <script type="text/javascript" id="bdshell_js"></script>
         <script type="text/javascript">
-        (function(exports) {
-          exports.bds_config = {
-            // appkey
-            "snsKey": {
-              'tsina': 'false',
-              'tqq': '',
-              't163': '',
-              'tsohu': ''
-            },
-            // @weibo id
-            'wbUid': '1044256885',
-            'searchPic': false,
-            'review': 'off'
-          };
-          document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000);
-        })(window);
+          (function(exports) {
+            exports.bds_config = {
+              // appkey
+              "snsKey": {
+                'tsina': 'false',
+                'tqq': '',
+                't163': '',
+                'tsohu': ''
+              },
+              // @weibo id
+              'wbUid': '1044256885',
+              'searchPic': false,
+              'review': 'off'
+            };
+            document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date() / 3600000);
+          })(window);
         </script>
         <style type="text/css">
-        #bdshare {
-          float: none !important;
-          font-size: 13px !important;
-          padding-bottom: 0 !important;
-        }
-        
-        #bdshare span.bds_more {
-          display: inline !important;
-          padding: 0 !important;
-          float: none !important;
-          font-family: "Microsoft YaHei", "微软雅黑" !important;
-          background-image: none !important;
-        }
-        
-        #bdshare span.bds_more:hover {
-          color: #228fdd;
-        }
+          #bdshare {
+            float: none !important;
+            font-size: 13px !important;
+            padding-bottom: 0 !important;
+          }
+          
+          #bdshare span.bds_more {
+            display: inline !important;
+            padding: 0 !important;
+            float: none !important;
+            font-family: "Microsoft YaHei", "微软雅黑" !important;
+            background-image: none !important;
+          }
+          
+          #bdshare span.bds_more:hover {
+            color: #228fdd;
+          }
         </style>
         <style>
-        .seo_data_list {
-          display: none!important;
-          height: 0!important;
-          overflow: hidden!important;
-        }
+          .seo_data_list {
+            display: none!important;
+            height: 0!important;
+            overflow: hidden!important;
+          }
         </style>
         <!-- 分享 end -->
       </div>
@@ -106,15 +106,15 @@
       <div class="i_feedFLow">
         <!--<div class="i_sinaFeed "  id="feedCard"></div>-->
         <style>
-        #feedCardTab {
-          display: none!important;
-        }
+          #feedCardTab {
+            display: none!important;
+          }
         </style>
         <link rel="stylesheet" type="text/css" href="http://n3.sinaimg.cn/lib/common/feed_comment/1.0.0/comment.css">
         <style type="text/css">
-        .feed-card-fixed .feed-card-tab {
-          width: 800px!important;
-        }
+          .feed-card-fixed .feed-card-tab {
+            width: 800px!important;
+          }
         </style>
         <div style="display:none;">
           <iframe name="columnEditor"></iframe>
@@ -128,74 +128,74 @@
         <div class="q-main-l fl mt20" id="feedCard"></div>
         <!-- 新浪组件配置 -->
         <script type="text/javascript">
-        var FEED_CARD_INFO = {
-          containerID: 'feedCard', // 容器ID
-          containerWidth: 660, // 默认宽度是660
-          loadType: 1, // 加载类型 1表示点击更多加载, 2表示自动加载
-          autoLoadDistance: 600, // 如果是自动加载, 有时候feed流并没有放在最下面, 所以scrollEnd的时候要判断这个距离
-          clickLoadText: '点击加载更多',
-          summaryKey: 'summary', // 摘要使用字段
-          notificationTemplate: '有{n}条消息，点击查看', // 提醒的格式
-          notificationTimeout: 1000 * 30, // 提醒的事件间隔
-          pageSize: 10, // 每次加载条数
-          stepSize: 3, // 加载三次之后出分页
-          moreTagTemplate: '点击查看更多关于“{n}”的文章',
-          searchQuery: 'channelid=2&begin=1401552000',
-          tagURL: 'http://tags.sports.sina.com.cn',
-          /*
-           * 评论相关配置
-           */
-          // 1. 是否支持当前页展开评论
-          enablePageComment: true,
-          // 2. 评论组件编码,默认是gbk
-          pageCommentEncoding: 'utf-8',
-          // 3. 是否显示盖楼,默认0,还可以为1
-          pageCommentShowReply: 0,
-          // 4. 评论显示字数
-          pageCommentMaxWordCount: 110,
-          // 5. 最热评论默认显示条数
-          pageCommentHotPageNum: 3,
-          // 6. 最新评论默认显示条数
-          pageCommentFirstPageNum: 10,
-          pageid: 13, // pageid与lid共同定位一个api地址
-          toFilterNews: [], // 过滤从feed系统走，此处可置空
-          isTabFixed: true,
-          fixedTop: 0,
-          hotNewsCount: 200, //评论超过该数字显示热icon
-          yPosition: 'auto', // 如果不固定，则给一个auto，自动计算
-          tabHeight: 50,
-          noDataText: '没有相关新闻',
-          // 最左边固定tab
-          firstTab: {
-            txt: '最新',
-            lid: 590,
-            css_width: 40
-          },
-          // 在渲染之前处理新闻数据
-          beforeRender: function(newsList) {
-            //        	for (var i = 0, len = newsList.length; i < len; i++) {
-            //           	var item = newsList[i];
-            //            	item.url = "/news-show.html";
-            //            }
-          },
-          // 默认tab
-          tabs: [1758],
-          allTabs: [1758],
-          tabInfos: {},
-          requireLogin: function(msg) {
-            var UserPanel = SINA_USER_PANEL;
-            UserPanel.setOutLoginMiddle();
-            UserPanel.getOutLogin().show();
-            // 可添加提示
-            __SinaTopBar__.user.showTip(msg);
-          },
-          isLogin: function() {
-            if (window.SINA_OUTLOGIN_LAYER) {
-              return window.SINA_OUTLOGIN_LAYER.isLogin();
+          var FEED_CARD_INFO = {
+            containerID: 'feedCard', // 容器ID
+            containerWidth: 660, // 默认宽度是660
+            loadType: 1, // 加载类型 1表示点击更多加载, 2表示自动加载
+            autoLoadDistance: 600, // 如果是自动加载, 有时候feed流并没有放在最下面, 所以scrollEnd的时候要判断这个距离
+            clickLoadText: '点击加载更多',
+            summaryKey: 'summary', // 摘要使用字段
+            notificationTemplate: '有{n}条消息，点击查看', // 提醒的格式
+            notificationTimeout: 1000 * 30, // 提醒的事件间隔
+            pageSize: 10, // 每次加载条数
+            stepSize: 3, // 加载三次之后出分页
+            moreTagTemplate: '点击查看更多关于“{n}”的文章',
+            searchQuery: 'channelid=2&begin=1401552000',
+            tagURL: 'http://tags.sports.sina.com.cn',
+            /*
+             * 评论相关配置
+             */
+            // 1. 是否支持当前页展开评论
+            enablePageComment: true,
+            // 2. 评论组件编码,默认是gbk
+            pageCommentEncoding: 'utf-8',
+            // 3. 是否显示盖楼,默认0,还可以为1
+            pageCommentShowReply: 0,
+            // 4. 评论显示字数
+            pageCommentMaxWordCount: 110,
+            // 5. 最热评论默认显示条数
+            pageCommentHotPageNum: 3,
+            // 6. 最新评论默认显示条数
+            pageCommentFirstPageNum: 10,
+            pageid: 13, // pageid与lid共同定位一个api地址
+            toFilterNews: [], // 过滤从feed系统走，此处可置空
+            isTabFixed: true,
+            fixedTop: 0,
+            hotNewsCount: 200, //评论超过该数字显示热icon
+            yPosition: 'auto', // 如果不固定，则给一个auto，自动计算
+            tabHeight: 50,
+            noDataText: '没有相关新闻',
+            // 最左边固定tab
+            firstTab: {
+              txt: '最新',
+              lid: 590,
+              css_width: 40
+            },
+            // 在渲染之前处理新闻数据
+            beforeRender: function(newsList) {
+              //        	for (var i = 0, len = newsList.length; i < len; i++) {
+              //           	var item = newsList[i];
+              //            	item.url = "/news-show.html";
+              //            }
+            },
+            // 默认tab
+            tabs: [1758],
+            allTabs: [1758],
+            tabInfos: {},
+            requireLogin: function(msg) {
+              var UserPanel = SINA_USER_PANEL;
+              UserPanel.setOutLoginMiddle();
+              UserPanel.getOutLogin().show();
+              // 可添加提示
+              __SinaTopBar__.user.showTip(msg);
+            },
+            isLogin: function() {
+              if (window.SINA_OUTLOGIN_LAYER) {
+                return window.SINA_OUTLOGIN_LAYER.isLogin();
+              }
+              return false;
             }
-            return false;
-          }
-        };
+          };
         </script>
       </div>
     </div>
@@ -210,47 +210,6 @@
       </div>
     </div>
   </div>
-  <!-- 内容主体 html start -->
-  <!--<div id="container" class="wrap layout_840_340" style="display:none">
-    <div class="main">
-      <div class="focusBox" id="focusBox">
-        <div class="fb_list">
-          <div class="fb_item">
-            <a href="http://caitong.sina.com.cn/n/ob/2016-07-08/doc-ifxtwiht3366393.shtml" target="_blank"><img src="http://n.sinaimg.cn/caitong/20160708/IR_d-fxtwihp9824522.png" width="840" height="350" /></a>
-            <a href="http://caitong.sina.com.cn/n/ob/2016-07-08/doc-ifxtwiht3366393.shtml" target="_blank"><span class="q-itemText pa">解读：民政部“十三五”规划对福彩都规划了啥？</span></a>
-            <div class="linearBg"></div>
-          </div>
-          <div class="fb_item">
-            <a href="http://caitong.sina.com.cn/n/ob/2016-07-07/doc-ifxtwiht3292381.shtml" target="_blank"><img src="http://n.sinaimg.cn/caitong/20160707/tOXu-fxtwiht3292453.png" /></a>
-            <a href="http://caitong.sina.com.cn/n/ob/2016-07-07/doc-ifxtwiht3292381.shtml" target="_blank"><span class="q-itemText pa">财政部无意恢复网售审批 鸿博网售项目上线仍需等待</span></a>
-            <div class="linearBg"></div>
-          </div>
-          <div class="fb_item">
-            <a href="http://caitong.sina.com.cn/n/ob/2016-07-06/doc-ifxtsatn8197165.shtml" target="_blank"><img src="http://n.sinaimg.cn/caitong/20160706/ziXG-fxtsatm1472340.jpg" /></a>
-            <a href="http://caitong.sina.com.cn/n/ob/2016-07-06/doc-ifxtsatn8197165.shtml" target="_blank"><span class="q-itemText pa">福体彩禁兼营是两彩斗法？部分省市对双机店封机制裁</span></a>
-            <div class="linearBg"></div>
-          </div>
-          <div class="fb_item">
-            <a href="http://caitong.sina.com.cn/part/activity/gxfc300w.html" target="_blank"><img src="http://n.sinaimg.cn/caitong/20160630/QM7q-fxtsatn7805030.jpg" /></a>
-            <a href="http://caitong.sina.com.cn/part/activity/gxfc300w.html" target="_blank"><span class="q-itemText pa">2.64亿得主壕捐300万 支招如何花钱赢5000元现金</span></a>
-            <div class="linearBg"></div>
-          </div>
-          <div class="fb_item">
-            <a href="http://t.cn/Rq88Uf5" target="_blank"><img src="http://n.sinaimg.cn/caitong/20160504/25-1-fxrtzte9959768.jpg" /></a>
-            <a href="http://t.cn/Rq88Uf5" target="_blank"><span class="q-itemText pa">彩问，提问赢奖金，来约！</span></a>
-            <div class="linearBg"></div>
-          </div>
-        </div>
-        <div class="fb_list1">
-        </div>
-        <a href="javascript:;" class="focus_arrow_left"></a>
-        <a href="javascript:;" class="focus_arrow_right"></a>
-      </div>
-    </div>
-    <div class="aside">
-
-    </div>
-  </div>-->
   <!--返回顶部按钮-->
   <a href="#" class="goTop"></a>
   <!-- 内容主体 html end  -->
@@ -264,21 +223,21 @@
   <script type="text/javascript" src="./j/lb_moudles/feed.min.js"></script>
   <!--<script type="text/javascript" src="http://tech.sina.com.cn/js/717/20141219/index2014/feed.1.2.5.js"></script>-->
   <script>
-    $(function(){
-  // 轮播图
-var mySwiper = new Swiper ('.swiper-container', {
-    direction: 'horizontal',
-    loop: true,
-    speed:500,
-    autoplay: 5000,//可选选项，自动滑动
-    // 如果需要分页器
-    pagination: '.swiper-pagination',
-    paginationClickable :true,
-    // 如果需要前进后退按钮
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-  });
-});
+    $(function() {
+      // 轮播图
+      var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 500,
+        autoplay: 5000, //可选选项，自动滑动
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        // 如果需要前进后退按钮
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+      });
+    });
   </script>
 </body>
 
