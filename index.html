@@ -263,7 +263,23 @@
   <script type="text/javascript" src="http://n.sinaimg.cn/caitong/report/pc/j/lb_moudles/comment.min.js"></script>
   <script type="text/javascript" src="./j/lb_moudles/feed.min.js"></script>
   <!--<script type="text/javascript" src="http://tech.sina.com.cn/js/717/20141219/index2014/feed.1.2.5.js"></script>-->
-  <script type="text/javascript" charset="utf-8" src="./j/index.js"></script>
+  <script>
+    $(function(){
+  // 轮播图
+var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    speed:500,
+    autoplay: 5000,//可选选项，自动滑动
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    paginationClickable :true,
+    // 如果需要前进后退按钮
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+  });
+});
+  </script>
 </body>
 
 </html>
