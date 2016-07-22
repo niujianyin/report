@@ -79,9 +79,6 @@ var mySwiper = new Swiper ('.swiper-container', {
 //    backgroundColor:"red"
 //  });
 
-  var=   
-
-
 
 });
 function feedView(newsList){
